@@ -84,11 +84,16 @@
             else{console.log('F')}}
         </script>
     </div>
+    
     <div>
-        <script>
-            document.getElementById('btn').addEventListener('click','changeinfo') = "changeTextBtn"
-            document.getElementById('para').innerHTML = "displayText"
-            function changeInfo(){document.getElementById('para').innerHTML = "Hello, Javascript World!"}
-        </script>
+        <body>
+            <button id="changeTextBtn">Click Button</button>
+            <p id="displayText">Javascript</p>
+            <script>
+                document.getElementById("changeTextBtn").addEventListener("click",function() {
+                document.getElementById("displayText").innerText = "Hello Javascript"
+            })
+            </script>
+        </body>
     </div>
 </html>
